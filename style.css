@@ -1,0 +1,288 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(asset/background\ image.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+
+}
+
+header {
+    height: 70px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    padding-right: 90px;
+
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+
+.btn-1 {
+    height: 35px;
+    width: 110px;
+    border: 2.5px solid transparent;
+    border-image: linear-gradient(45deg, rgb(153, 153, 230), rgb(219, 33, 219));
+    border-image-slice: 1;
+    background: linear-gradient(to right, rgb(214, 163, 214), white);
+
+}
+
+.btn-2 {
+    height: 38px;
+    width: 160px;
+    color: white;
+    background: linear-gradient(to right, rgb(114, 114, 235), rgb(202, 75, 202));
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0, 0, 0, lightgrey;
+}
+
+img {
+    position: absolute;
+}
+
+.main-container {
+    padding-top: 90px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.main-container h1 {
+    color: rgb(116, 5, 116);
+    font-size: 50px;
+}
+
+h1 span {
+    color: rgb(204, 20, 204);
+}
+
+nav img {
+    margin-left: 80px;
+} */
+
+
+/* @media only screen and (max-width: 750px) and (min-width:490px){ 
+    header{
+        width: 100%;
+    }
+    body {
+        background-image: url(asset/background\ image.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    nav ul {
+        padding-top: 50px;
+       display: flex;
+       justify-content: center;
+    }
+
+    li a {
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    .btn-1 {
+        height: 30px;
+        width: 90px;
+        text-align: center;
+
+    }
+
+    .btn-2 {
+        height: 35px;
+        width: 140px;
+    }
+
+    .main-container {
+        padding-top: 70px;
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    img.logo{
+        
+         width: 13% ;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+    }
+
+    .pic img{
+
+    }
+ } */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(asset/background\ image.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    overflow: hidden;
+    /* Revisit this property if you have scrollable sections */
+}
+
+/* Header styles */
+header {
+    height: 70px;
+    width: 100%;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: right;
+    padding-right: 90px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+
+/* Button styles */
+.btn-1 {
+    height: 35px;
+    width: 110px;
+    border: 2.5px solid transparent;
+    border-image: linear-gradient(45deg, rgb(153, 153, 230), rgb(219, 33, 219));
+    border-image-slice: 1;
+    background: linear-gradient(to right, rgb(214, 163, 214), white);
+}
+
+.btn-2 {
+    height: 38px;
+    width: 160px;
+    color: white;
+    background: linear-gradient(to right, rgb(114, 114, 235), rgb(202, 75, 202));
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0, 0, 0, lightgrey;
+}
+
+/* Image styles */
+img {
+    position: absolute;
+}
+
+/* Main container styles */
+.main-container {
+    padding-top: 90px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.main-container h1 {
+    color: rgb(116, 5, 116);
+    font-size: 50px;
+}
+
+h1 span {
+    color: rgb(204, 20, 204);
+}
+
+nav img {
+    margin-left: 80px;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to right, white, rgb(233, 186, 233));
+        background-attachment: fixed;
+    }
+
+    header {
+        height: 260px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding-top: 50px;
+        display: block;
+        justify-content: left;
+
+    }
+
+    li a {
+        padding: 10px;
+        line-height: 2.5;
+        margin-bottom: 20px;
+        padding-right: 140px;
+
+
+    }
+
+    li a:hover {
+        background-color: rgb(207, 75, 207);
+        color: white;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 40%;
+    }
+
+    .main-container img , content{
+        display: none;
+        justify-content: left;
+    }
+
+    .main-container {
+        margin-left: 30px;
+    }
+
+    .main-container h1 {
+        font-size: 31px;
+    }
+}
